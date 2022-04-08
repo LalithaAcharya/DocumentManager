@@ -1,0 +1,154 @@
+
+.para{
+    font-size: 3em;
+    margin-top: 10px;
+    padding:0px 20px;
+    /* border-radius: 25px;
+    width:96%;
+    height:40px;
+    color:white;
+    padding:10px 20px;
+    background-image: linear-gradient(to right top, #092c49, #2d4b70, #506c9a, #758fc6, #9db3f3); */
+}
+
+.btn{
+    width:100px;
+    margin-top: 5px;
+    margin-right: 5px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    color:black;
+}
+.btn:hover{
+    background-color: whitesmoke;
+    color: #e91e63;
+}
+
+  /* The Table Attributes */
+  table {
+    text-align: center;
+    width: 99%;
+    margin: 20px 10px;
+    font-family: sans-serif;
+    border-bottom: 5px solid #009688;
+  }
+  /* The Attributes that the Head and the Body of the Table Share */
+  th,
+  td {
+    padding: 10px;
+  }
+  /* Attributes of the Head of the Body */
+  th {
+    background-color: whitesmoke;
+    color: black;
+  }
+  /* Attributes of Each Cell */
+  td {
+    color:white;
+    background-color: rgb(0,35,51);
+    opacity:0.7;
+    /* background-image: linear-gradient(to right top, #092c49, #2d4b70, #506c9a, #758fc6, #9db3f3); */
+  }
+  /*Attributes of Span*/
+  span {
+    padding: 5px 10px;
+    margin: 3px;
+    color: white;
+  }
+  /*Attributes */
+  .blue {
+    background-color: #03a9f4;
+  }
+  .pink {
+    background-color: #e91e63;
+  }
+  
+  .document{
+    margin-top: 0px;
+    margin-left: 300px;
+}
+  
+  .hero-image {
+    /*  This creates an image overlay  */
+    background-image: 
+      linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0.8)),
+      
+      /* photo coutesy of unsplash */
+      url(https://blog.biglelegal.com/hubfs/Blog%20Images/Imagen%20blog%20enero.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* to ensure the image takes up the entire viewport */
+    height: 90.7vh; 
+    position: relative;
+  }
+  
+  /* centers the content on the viewport */
+  .hero-text {
+    text-align: center;
+    width:80%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    /*  words remain as is without breaking up  */
+    white-space: nowrap;
+    
+    /*  This creates a text shadow around the the text within the hero-text div  */
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+                 0px 8px 13px rgba(0, 0, 0, 0.1),
+                 0px 16px 23px rgba(0, 0, 0, 0.1);
+    
+  }
+  
+  .hero-text h1 {
+    font-size: 4.3em;
+    font-weight: 300;
+    animation: effect 2s linear infinite; 
+    
+  }
+
+  @keyframes effect { 
+	0% { 
+		color: #FFF;
+		-webkit-background-clip: text;
+	} 
+	100% { 
+		color: rgb(0,255,132); 
+		-webkit-background-clip: text; 
+	} 
+} 
+  
+  .hero-text p {
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 700;
+  }
+  
+  .btn-default,
+  .btn-default:visited {
+    margin-top: 50px;
+    padding: 13px 25px;
+    border-radius: 5px;
+    border: none;
+    font-size: .9em;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: whitesmoke;
+    transition: background-color 0.1s;
+  }
+  
+  .btn-default:hover,
+  .btn-default:active {
+    background-color: #896600;
+  }
+
+  

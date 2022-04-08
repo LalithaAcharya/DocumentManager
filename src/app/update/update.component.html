@@ -1,0 +1,33 @@
+<div class="doc-container">
+    <div class="hero-image">
+        <div class="hero-text">
+            <h2 class="para">UPLOAD THE FILE</h2>
+            <form class="form" [formGroup]="formValue">
+              <label> Document Name &nbsp;
+                  <input type="text" formControlName="DocName" [(ngModel)]="document.DocName" placeholder="Enter your name"  required autocomplete="off">
+              </label>
+               <!-- <label> upload Document &nbsp;
+                  <input type="file" placeholder="document">
+                  <button class="file">choose the file</button>
+                </label> -->
+                <form>
+                    <label>Update the document</label>
+                    <input formControlName="DocFile" [(ngModel)]="document.DocFile" type="file" class="form-control"  required autocomplete="off"> 
+                </form>
+                <label>Document Type &nbsp;
+                    <select class="custom-select form-control mb3"  formControlName="DocType" [(ngModel)]="document.DocType"  required autocomplete="off">
+                        <option>Choose the document type ...</option>
+                    <option>Pdf</option>
+                    <option>Word</option>
+                    <option>Excel</option>
+                </select>
+                </label>
+                <label>User Name &nbsp;
+                    <input type="text" formControlName="Name" placeholder="Enter your name" [(ngModel)]="document.Name"  required autocomplete="off">
+                </label>
+                    <button (click)="update()" class="submit">UPLOAD</button> 
+            </form>
+            <button routerLink="/navbar" class="btn">BACK</button>
+            </div>
+        </div>
+      </div>

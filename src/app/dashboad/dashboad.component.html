@@ -1,0 +1,52 @@
+
+     <div class="doc-container">
+        <div class="hero-image">
+            <div class="hero-text">
+                <div class="dashboard">
+                    <h2 class="para">DASHBOARD</h2>
+                    </div>
+                    
+                    <table>
+                        
+                               <thead>
+                                   <tr>
+                                       <th>USERNAME</th>
+                                       <th>DOCUMENT NAME</th>
+                                       <th>DOCUMENT TYPE</th>
+                                       <th>DOCUMENT</th>
+                                   </tr>
+                        
+                               </thead>
+                       
+                               <tbody *ngFor="let row of documentData">
+                        
+                                   <tr>
+                                       <td>{{row.Name}}</td>
+                                       <td>{{row.DocName}}</td>
+                                       <td>{{row.DocType}}</td>
+                                       <td>{{row.DocFile}}</td>
+                                   </tr>
+                        
+                                   <!-- <tr>
+                                    <td>02</td>
+                                    <td>Pragathi</td>
+                                    <td>result</td>
+                                    <td>DOC</td>
+                                      
+                                   </tr>
+                                   
+                        
+                                   <tr>
+                                    <td>03</td>
+                                    <td>Punya</td>
+                                    <td>Budjet</td>
+                                    <td>Excel</td>
+                                   </tr> -->
+                        
+                              </tbody>
+                        
+                           </table>
+                           <button routerLink="/navbar" class="btn">BACK</button>
+            </div>
+          </div>
+    </div>

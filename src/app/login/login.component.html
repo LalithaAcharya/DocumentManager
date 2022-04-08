@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="left">
+      <img src="../assets/pic1.png" class="animation a6" style="margin: 0 auto 10px; width: 150px">
+      <div class="header">
+        <h2 class="animation a1">Login</h2>
+      </div>
+ <!-- <form class="form" method="">
+            <input type="email" class="form-field animation a3" name="" placeholder="User">
+            <input type="password" class="form-field animation a4" name="" placeholder="Password">
+        
+            <a routerLink="/navbar" class="button animation a6">LOGIN</a>
+            <p class="para">New User? <a routerLink="/register">Create an account</a></p>
+          </form> -->
+<div id="loginpage">
+    <div id="content">
+        <div class="text-center">
+
+          <h6 class="mb-3">Please enter email & password !!</h6>
+        </div>
+          <form>
+            <form [formGroup]="loginForm" (ngSubmit)="login()">
+              <div class="mb-3">
+                <!-- <label for="email" class="form-label">Email address</label> -->
+                <input formControlName="email" placeholder="Email" class="form-field animation a4" type="email"  id="email" aria-describedby="emailHelp">
+                <span class="text-danger" style="font-size:12px;" *ngIf="loginForm.controls['email'].dirty && loginForm.hasError('required','email')">*Email Id is required</span>
+              </div>
+              <div class="mb-3">
+                <!-- <label for="pwd" class="form-label">Password</label> -->
+                <input formControlName="password" placeholder="Password" type="password" class="form-field animation a4" id="pwd">
+                <span class="text-danger" style="font-size:12px;" *ngIf="loginForm.controls['password'].dirty && loginForm.hasError('required','password')">*Password is required</span>
+              </div>
+              <button type="submit" class="button animation a6" [disabled]="!loginForm.valid">Login</button>
+              <p class="text-center" style="margin-top:10px;">New user?<a routerLink="/register">Register here</a>.</p>
+            </form>
+          </form>
+    </div>
+  </div>
+</div>
+<div id="right"></div>
+</div>

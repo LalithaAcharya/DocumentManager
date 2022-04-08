@@ -1,0 +1,56 @@
+
+     <div class="doc-container">
+        <div class="hero-image">
+            <div class="hero-text">
+                <div class="dashboard">
+                    <h2 class="para">EDIT THE FILE</h2>
+                    </div>
+                    
+                    <table>
+                        
+                               <thead>
+                                   <tr>
+                                    <th>USERNAME</th>
+                                    <th>DOCUMENT NAME</th>
+                                    <th>DOCUMENT TYPE</th>
+                                    <th>DOCUMENT</th>
+                                       <th>ACTION</th>
+                                   </tr>
+                        
+                               </thead>
+                       
+                               <tbody *ngFor="let row of documentData">
+                        
+                                <tr>
+                                    <td>{{row.Name}}</td>
+                                    <td>{{row.DocName}}</td>
+                                    <td>{{row.DocType}}</td>
+                                    <td>{{row.DocFile}}</td>
+                                    <td><button (click)="update(row.id)" class="btn">EDIT</button></td>
+                                   </tr> 
+                        
+                                   <!-- <tr>
+                                    <td>02</td>
+                                    <td>PRAGATHI</td>
+                                    <td>RESULT</td>
+                                    <td>PDF</td>
+                                    <td><button class="btn">EDIT</button></td>
+                                      
+                                   </tr>
+                                   
+                        
+                                   <tr>
+                                    <td>03</td>
+                                    <td>PUNYA</td>
+                                    <td>BUDJET</td>
+                                    <td>EXCEL</td>
+                                    <td><button class="btn">EDIT</button></td>
+                                   </tr> -->
+                        
+                              </tbody>
+                        
+                           </table>
+                           <button routerLink="/navbar" class="btn">BACK</button>
+            </div>
+          </div>
+    </div>

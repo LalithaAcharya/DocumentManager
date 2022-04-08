@@ -1,0 +1,28 @@
+{
+  "posts": [
+    {
+      "id": 2,
+      "Name": "Punya",
+      "DocName": "certificate",
+      "DocType": "Word",
+      "DocFile": "C:\\fakepath\\Punya H res C V.docx"
+    },
+    {
+      "id": 3,
+      "Name": "Lalitha",
+      "DocName": "result",
+      "DocType": "Pdf",
+      "DocFile": "C:\\fakepath\\lalith r Resume (1).docx"
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  },
+  "signUpUsers": {
+    "fullName": "lalitha",
+    "email": "lalitha@gmail.com",
+    "password": "Lalitha143",
+    "mobile": "9632587410"
+  }
+}

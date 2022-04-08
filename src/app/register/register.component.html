@@ -1,0 +1,52 @@
+<div class="container">
+    <div class="left">
+      <img src="../assets/pic1.png" class="animation a6" style="margin: 0 auto 10px; width: 100px">
+      <div class="header">
+        <h2 class="animation a1">Register</h2>
+      </div>
+
+        <!-- <form [formGroup]="signUpForm" (ngSubmit)="signUp()" class="form" method="">
+            <input formControlName="fullName" type="text" class="form-field animation a3" name="" placeholder="Name">
+            <input formControlName="email" type="email" class="form-field animation a3" name="" placeholder="User email">
+            <input formControlName="password" type="password" class="form-field animation a4" name="" placeholder="Password">
+            <input formControlName="password" type="password" class="form-field animation a4" name="" placeholder="re-enter-Password">
+            <button  [disabled]="!signUpForm.valid" class="button animation a6">Register</button>
+          </form> -->
+
+<div id="loginpage">
+    <div id="content">
+        <div class="text-center">
+          
+          
+        </div>
+          <form>
+            <form [formGroup]="signUpForm" (ngSubmit)="signUp()">
+              <div class="mb-3">
+                <!-- <label for="name" class="form-label">Name</label> -->
+                <input formControlName="fullName" placeholder="Enter your name" type="text" class="form-field animation a3" id="name">
+                <span class="text-danger" style="font-size:12px;" *ngIf="signUpForm.controls['fullName'].dirty && signUpForm.hasError('required','fullName')">*Username is required</span>
+              </div>
+              <div class="mb-3">
+                <!-- <label for="mobile" class="form-label">Mobile Number</label> -->
+                <input formControlName="mobile" placeholder="Enter your number" type="text" class="form-field animation a3" id="mobile">
+                <span class="text-danger" style="font-size:12px;" *ngIf="signUpForm.controls['mobile'].dirty && signUpForm.hasError('required','mobile')">*Mobile Number is required</span>
+              </div>
+              <div class="mb-3">
+                <!-- <label for="email" class="form-label">Email address</label> -->
+                <input formControlName="email" placeholder="Enter your email" type="email"class="form-field animation a3" id="email" aria-describedby="emailHelp">
+                <span class="text-danger" style="font-size:12px;" *ngIf="signUpForm.controls['email'].dirty && signUpForm.hasError('required','email')">*Email Id is required</span>
+              </div>
+              <div class="mb-3">
+                <!-- <label for="pwd" class="form-label">Password</label> -->
+                <input formControlName="password" placeholder="Enter your password" type="password" class="form-field animation a4" id="pwd">
+                <span class="text-danger" style="font-size:12px;" *ngIf="signUpForm.controls['password'].dirty && signUpForm.hasError('required','password')">*Password is required</span>
+              </div>
+              <button class="button animation a6" type="submit"  [disabled]="!signUpForm.valid">Register</button>
+              <p class="text-center" style="margin-top:10px;">Already registered?Click here to <a routerLink="/login">Login</a>.</p>
+            </form>
+          </form>
+    </div>
+  </div> 
+</div>
+<div id="right"></div>
+</div>

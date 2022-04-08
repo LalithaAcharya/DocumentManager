@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ body{
+    /* background-image: linear-gradient(to right top, #f3f9f8, #d0e8d5, #c9d2a3, #d8b278, #ea8b6a); */
+    background-color:#a8b8bb;
+    /* background-image: linear-gradient(to right top, #f3f9f8, #a8b8bb, #657a85, #2f4053, #050722); */
+} 
