@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import Swal from 'sweetalert2';
 import { ApiService } from '../shared/api.service';
 
 @Component({
@@ -26,7 +27,8 @@ export class DeleteComponent implements OnInit {
    deleteDocument(row : any){
     this.api.deleteWorkflow(row.id)
     .subscribe(res=>{
-      alert("Document deleted Successfully")
+      Swal.fire('Thank you...', 'Document deleted succesfully!', 'success');
+      // alert("Document deleted Successfully")
       this.getAllDocument();
     })
   }

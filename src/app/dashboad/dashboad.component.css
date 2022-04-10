@@ -17,7 +17,7 @@
     margin-right: 5px;
     height: 40px;
     border-radius: 20px;
-    background-color: whitesmoke;
+    background-color: hsl(176, 68%, 64%);
     color:black;
 }
 .btn:hover{
@@ -25,38 +25,39 @@
     color: #e91e63;
 }
 
-  /* The Table Attributes */
+
   table {
     text-align: center;
     width: 99%;
     margin: 20px 10px;
     font-family: sans-serif;
     border-bottom: 5px solid #009688;
+    
   }
-  /* The Attributes that the Head and the Body of the Table Share */
+  
   th,
   td {
     padding: 10px;
   }
-  /* Attributes of the Head of the Body */
+ 
   th {
-    background-color: whitesmoke;
+    background-color: hsl(176, 68%, 64%);
     color: black;
   }
-  /* Attributes of Each Cell */
+  
   td {
     color:white;
     background-color: rgb(0,35,51);
     opacity:0.7;
     /* background-image: linear-gradient(to right top, #092c49, #2d4b70, #506c9a, #758fc6, #9db3f3); */
   }
-  /*Attributes of Span*/
+ 
   span {
     padding: 5px 10px;
     margin: 3px;
     color: white;
   }
-  /*Attributes */
+ 
   .blue {
     background-color: #03a9f4;
   }
@@ -70,24 +71,24 @@
 }
   
   .hero-image {
-    /*  This creates an image overlay  */
+    
     background-image: 
       linear-gradient(
         to bottom,
         rgba(0, 0, 0, 0.8),
         rgba(0, 0, 0, 0.8)),
       
-      /* photo coutesy of unsplash */
+     
       url(https://www.zzi.si/e_files/news/eff.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    /* to ensure the image takes up the entire viewport */
+    
     height: 90.7vh;  
     position: relative;
   }
   
-  /* centers the content on the viewport */
+ 
   .hero-text {
     text-align: center;
     width:80%;
@@ -98,10 +99,7 @@
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     color: #fff;
-    /*  words remain as is without breaking up  */
     white-space: nowrap;
-    
-    /*  This creates a text shadow around the the text within the hero-text div  */
     text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
                  0px 8px 13px rgba(0, 0, 0, 0.1),
                  0px 16px 23px rgba(0, 0, 0, 0.1);

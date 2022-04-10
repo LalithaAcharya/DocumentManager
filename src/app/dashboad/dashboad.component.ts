@@ -11,10 +11,6 @@ import { ApiService } from '../shared/api.service';
 })
 export class DashboadComponent implements OnInit {
 
-  // constructor(private dm:DocumentService) { }
-  // docPrint:Document[]=this.dm.document;
-  // ngOnInit(): void {
-  // }
   formValue !: FormGroup;
   documentobj : Document = new Document();
   documentData!:any;

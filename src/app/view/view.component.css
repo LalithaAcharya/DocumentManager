@@ -17,7 +17,7 @@
     margin-right: 5px;
     height: 40px;
     border-radius: 20px;
-    background-color: whitesmoke;
+    background-color: hsl(176, 68%, 64%);
     color:black;
 }
 .btn:hover{
@@ -40,7 +40,7 @@
   }
   /* Attributes of the Head of the Body */
   th {
-    background-color: whitesmoke;
+    background-color: hsl(176, 68%, 64%);
     color: black;
   }
   /* Attributes of Each Cell */
@@ -83,7 +83,7 @@
     background-position: center;
     background-repeat: no-repeat;
     /* to ensure the image takes up the entire viewport */
-    height: 90.7vh; 
+    height: 150vh; 
     position: relative;
   }
   
@@ -92,7 +92,7 @@
     text-align: center;
     width:80%;
     position: absolute;
-    top: 40%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: 'Lato', sans-serif;
@@ -108,12 +108,12 @@
     
   }
   
-  .hero-text h1 {
+  /* .hero-text h1 {
     font-size: 4.3em;
     font-weight: 300;
     animation: effect 2s linear infinite; 
     
-  }
+  } */
 
   @keyframes effect { 
 	0% { 
@@ -133,22 +133,6 @@
     font-weight: 700;
   }
   
-  .btn-default,
-  .btn-default:visited {
-    margin-top: 50px;
-    padding: 13px 25px;
-    border-radius: 5px;
-    border: none;
-    font-size: .9em;
-    font-weight: 700;
-    text-transform: uppercase;
-    background-color: whitesmoke;
-    transition: background-color 0.1s;
-  }
-  
-  .btn-default:hover,
-  .btn-default:active {
-    background-color: #896600;
-  }
+ 
 
   

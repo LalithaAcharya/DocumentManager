@@ -2,7 +2,7 @@
   "posts": [
     {
       "id": 2,
-      "Name": "Punya",
+      "Name": "Pragathi",
       "DocName": "certificate",
       "DocType": "Word",
       "DocFile": "C:\\fakepath\\Punya H res C V.docx"
@@ -13,6 +13,20 @@
       "DocName": "result",
       "DocType": "Pdf",
       "DocFile": "C:\\fakepath\\lalith r Resume (1).docx"
+    },
+    {
+      "id": 4,
+      "Name": "Rohini",
+      "DocName": "resume",
+      "DocType": "Pdf",
+      "DocFile": "C:\\fakepath\\ResCv.punya.pdf"
+    },
+    {
+      "id": 5,
+      "Name": "Rathna",
+      "DocName": "payslip",
+      "DocType": "Pdf",
+      "DocFile": "C:\\fakepath\\payslip (1).pdf"
     }
   ],
   "comments": [],
@@ -20,9 +34,9 @@
     "name": "typicode"
   },
   "signUpUsers": {
-    "fullName": "lalitha",
+    "fullName": "Lalitha",
     "email": "lalitha@gmail.com",
-    "password": "Lalitha143",
-    "mobile": "9632587410"
+    "password": "Lalitha123",
+    "mobile": "6380131015"
   }
 }

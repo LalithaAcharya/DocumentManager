@@ -10,32 +10,33 @@
                         
                                <thead>
                                    <tr>
-                                       <th>SL.NO</th>
                                        <th>USERNAME</th>
                                        <th>DOCUMENT NAME</th>
                                        <th>DOCUMENT TYPE</th>
+                                       <th>DOCUMENT</th>
                                        <th>ACTION</th>
                                    </tr>
                         
                                </thead>
                        
-                               <tbody>
+                               <tbody  *ngFor="let row of documentData">
                         
                                    <tr>
-                                       <td>01</td>
-                                       <td>LALITHA</td>
-                                       <td>RESUME</td>
-                                       <td>DOC</td>
-                                       <td><button class="btn">VIEW</button></td>
+                                    <td>{{row.Name}}</td>
+                                    <td>{{row.DocName}}</td>
+                                    <td>{{row.DocType}}</td>
+                                    <td>{{row.DocFile}}</td>
+                                       <td><button class="btn">VIEW</button>
+                                       <button class="btn">DOWNLOAD</button></td>
                                    </tr>
-                        
+<!--                         
                                    <tr>
                                     <td>02</td>
                                     <td>PRAGATHI</td>
                                     <td>RESULT</td>
                                     <td>PDF</td>
-                                    <td><button class="btn">VIEW</button></td>
-                                      
+                                    <td><button class="btn">VIEW</button>
+                                    <button class="btn">download</button></td> 
                                    </tr>
                                    
                         
@@ -44,8 +45,9 @@
                                     <td>PUNYA</td>
                                     <td>BUDJET</td>
                                     <td>EXCEL</td>
-                                    <td><button class="btn">VIEW</button></td>
-                                   </tr>
+                                    <td><button class="btn">VIEW</button>
+                                    <button class="btn">download</button></td>
+                                   </tr> -->
                         
                               </tbody>
                         

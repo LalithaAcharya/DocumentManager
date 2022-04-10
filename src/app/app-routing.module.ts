@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ContactusComponent } from './contactus/contactus.component';
 import { DashboadComponent } from './dashboad/dashboad.component';
 import { DeleteComponent } from './delete/delete.component';
 import { EditComponent } from './edit/edit.component';
@@ -61,6 +62,10 @@ const routes: Routes = [
   {
     path:"update/:id",
     component:UpdateComponent
+  },
+  {
+    path:"contactus",
+    component:ContactusComponent
   }
 ];
 

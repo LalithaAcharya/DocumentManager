@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-navbar',
@@ -12,4 +13,8 @@ export class NavbarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  confirmBox() {
+   
+    Swal.fire('Thank you...', 'You Log-out successfully!', 'success');
+}
 }

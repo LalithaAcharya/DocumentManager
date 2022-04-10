@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <div class="menu">
     <div class="menu-icon">
-      <div class="logo"><img src="../assets/folder.png" width="60px" height="60px"> </div>
+      <div class="logo"><a routerLink="/navbar"><i class="fa-solid fa-house-user"></i></a></div>
     <!-- <div class="logo"><i class="fa fa-file"></i></div> -->
     <i class="fa-solid fa-align-left" id='botao'></i>
     </div>
@@ -14,7 +14,7 @@
         <a routerLink="/view"><li><i class="fa fa-eye" aria-hidden="true"></i> VIEW</li></a>
         <a routerLink="/edit"><li><i class="fa fa-edit"></i>EDIT</li></a>
         <a routerLink="/delete"><li><i class="fa fa-trash" aria-hidden="true"></i> DELETE</li></a>
-        <a routerLink=""><li><i class="fa fa-sign-out"></i> LOGOUT</li></a>
+        <a routerLink=""  (click)="confirmBox()"><li><i class="fa fa-sign-out"></i> LOGOUT</li></a>
       </ul>
     </nav>
   </div>

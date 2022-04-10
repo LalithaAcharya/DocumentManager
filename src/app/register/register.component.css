@@ -3,6 +3,7 @@
   
   .container {
     display: flex;
+    background-color:#a8b8bb
   }
   
   .left {
@@ -114,7 +115,7 @@
   }
 
  .button:hover{
-    background-color: whitesmoke;
+    background-color: hsl(176, 68%, 64%);
     color: rgb(0,35,51); 
 }
   

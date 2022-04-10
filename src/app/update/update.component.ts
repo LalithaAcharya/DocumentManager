@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
+import Swal from 'sweetalert2';
 import { ApiService } from '../shared/api.service';
 import { Document } from '../shared/model/document';
 import { DetailsDocument } from '../shared/model/documentDetail';
@@ -41,7 +42,8 @@ export class UpdateComponent implements OnInit {
     this.ups.updateDocumentDetails(this.document).subscribe(data=>{
     });
     this.getDocumentDetails();
-    alert("Document Updated Successfully")
+    Swal.fire('Thank you...', 'Document updated succesfully!', 'success');
+    // alert("Document Updated Successfully")
     this.router.navigate(['/dashboard']);
   }
 

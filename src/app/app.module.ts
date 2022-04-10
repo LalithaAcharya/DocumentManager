@@ -17,6 +17,8 @@ import { KeyfeaturesComponent } from './keyfeatures/keyfeatures.component';
 import { UploadComponent } from './upload/upload.component';
 import { ViewComponent } from './view/view.component';
 import { UpdateComponent } from './update/update.component';
+import { NgToastModule } from 'ng-angular-popup';
+import { ContactusComponent } from './contactus/contactus.component';
 
 @NgModule({
   declarations: [
@@ -32,13 +34,15 @@ import { UpdateComponent } from './update/update.component';
     KeyfeaturesComponent,
     UploadComponent,
     ViewComponent,
-    UpdateComponent
+    UpdateComponent,
+    ContactusComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgToastModule
     
   ],
   providers: [],

@@ -6,7 +6,8 @@
     max-width:100%;
     width: 300px;
     height:100vh;
-    background-color: rgb(0,35,51);
+    /* background-color: rgb(0,35,51); */
+    background-color: transparent;
     color:#fff;
     transition: .6s;
   }
@@ -44,7 +45,7 @@
   }
   
   .menu-icon i:hover{
-    color: blue;
+    color: hsl(176, 68%, 64%);
   }
   
   .menu ul{
@@ -85,6 +86,11 @@
   }
   
   .menu ul li:hover{
-    background: #fff;
+    background: hsl(176, 68%, 64%);
    color:#000;
+  }
+
+  .fa-house-user{
+    margin-top: 2px;
+    font-size: 1.5em;
   }

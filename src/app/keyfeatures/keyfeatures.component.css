@@ -3,7 +3,7 @@
  .feature{
     /* margin-top: -20px;*/
        margin-bottom: -40px;
-       background-color: whitesmoke;
+       background-color: transparent;
        /* background-image:url("https://www.bizportals365.com/wp-content/uploads/dms-features.jpg");
        background-repeat: no-repeat;
        background-size: cover; */
@@ -18,7 +18,8 @@
  }
  
  header > h1 {
-   color:#1c1e3f;
+   /* color:#1c1e3f; */
+   color:white;
    font-weight: 2em;
    font-size:3em;
  }
@@ -28,6 +29,7 @@
  }
  
  header > p {
+   color:gray;
    max-width: 520px;
    margin: auto;
  }
@@ -200,8 +202,10 @@ main{
 width:100px;
 height:40px;
 border-radius: 20px;
-background-color: #1c1e3f;
+background-color: hsl(176, 68%, 64%);;
 color: white;
 margin-top: -20px;
 margin-left: 1200px;
+font-size: 1em;
+font-weight: 300;
 }
