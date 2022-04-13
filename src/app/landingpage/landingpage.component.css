@@ -9,7 +9,7 @@
 
 body{
    
-    background-image:linear-gradient(hsl(218, 28%, 15%),hsl(217, 28%, 13%));
+    background-image:linear-gradient(hsl(218, 28%, 15%),rgba(65, 18, 117, 0.7));
     font-size:14px;
 
 }
